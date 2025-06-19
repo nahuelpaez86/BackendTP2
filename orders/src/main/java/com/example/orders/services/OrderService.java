@@ -3,6 +3,7 @@ package com.example.orders.services;
 import com.example.orders.exepctions.DomainException;
 import com.example.orders.exepctions.ErrorType;
 import com.example.orders.models.commands.CreateOrderData;
+import com.example.orders.models.commands.UpdateOrderData;
 import com.example.orders.models.dto.OrderDTO;
 import com.example.orders.models.entities.Order;
 import com.example.orders.models.mappers.OrderMapper;
@@ -56,7 +57,7 @@ import java.util.Objects;
             repository.save(order);
         }
 
-        public void updateOrder(Long id, OrderDTO newOrder) {
+        public void updateOrder(Long id, UpdateOrderData newOrder) {
             Order order = repository.findById(id)
                     .orElseThrow(() -> new DomainException(ErrorType.ORDER_NOT_FOUND, id));
 
