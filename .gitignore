@@ -1,0 +1,49 @@
+# =======================
+# Java / Maven project
+# =======================
+
+# Carpetas generadas por Maven
+/target/
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# Logs
+*.log
+
+# Archivos de compilación
+*.class
+
+# =======================
+# IntelliJ IDEA
+# =======================
+.idea/
+*.iml
+*.iws
+
+# =======================
+# Archivos del sistema
+# =======================
+.DS_Store
+Thumbs.db
+
+# =======================
+# Maven Wrapper
+# =======================
+.mvn/
+!**/maven-wrapper.jar
+mvnw
+mvnw.cmd
+
+# =======================
+# Eclipse (por si alguien usa)
+# =======================
+*.project
+*.classpath
+*.settings/
+
+# =======================
+# Archivos de backup
+# =======================
+*~
+*.bak
+*.swp
